@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aspirasi | PARENTLINK</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <h2 class="brand">PARENT<span>LINK</span></h2>
+    <p class="tagline">Kolaborasi sekolah dan keluarga</p>
+    <nav>
+      <a href="index.html">⌂ Dashboard</a>
+      <a href="paguyuban.html">♧ Paguyuban</a>
+      <a href="komite.html">▣ Komite</a>
+      <a class="active" href="aspirasi.html">✉ Aspirasi</a>
+      <a href="agenda.html">▦ Agenda</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <span>Portal Kolaborasi Pendidikan</span>
+      <a href="index.html">Kembali ke Dashboard</a>
+    </header>
+
+    <section class="content">
+      <h1>Ruang Aspirasi</h1>
+      <p>Sampaikan saran, masukan, dan aspirasi untuk kemajuan sekolah.</p>
+
+      <div class="panel">
+        <h2>Formulir Aspirasi</h2>
+
+        <form name="aspirasi" method="POST"
+          data-netlify="true" netlify-honeypot="bot-field"
+          action="/terima-kasih.html">
+
+          <input type="hidden" name="form-name" value="aspirasi">
+          <p hidden>
+            <label>Jangan isi: <input name="bot-field"></label>
+          </p>
+
+          <label>Nama Pengirim</label>
+          <input name="nama" required placeholder="Nama orang tua/wali">
+
+          <label>Kategori Aspirasi</label>
+          <select name="kategori" required>
+            <option value="">Pilih kategori</option>
+            <option>Sarana dan Prasarana</option>
+            <option>Pembelajaran</option>
+            <option>Kegiatan Sekolah</option>
+            <option>Komunikasi</option>
+            <option>Lainnya</option>
+          </select>
+
+          <label>Isi Aspirasi</label>
+          <textarea name="pesan" rows="6" required
+            placeholder="Tuliskan aspirasi atau saran Anda..."></textarea>
+
+          <button class="btn" type="submit">Kirim Aspirasi</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
