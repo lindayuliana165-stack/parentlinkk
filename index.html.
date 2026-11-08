@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PARENTLINK | Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <h2 class="brand">PARENT<span>LINK</span></h2>
+    <p class="tagline">Kolaborasi sekolah dan keluarga</p>
+    <nav>
+      <a class="active" href="index.html">⌂ Dashboard</a>
+      <a href="paguyuban.html">♧ Paguyuban</a>
+      <a href="komite.html">▣ Komite</a>
+      <a href="aspirasi.html">✉ Aspirasi</a>
+      <a href="agenda.html">▦ Agenda</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <span>Portal Kolaborasi Pendidikan</span>
+      <span class="user">Demo PARENTLINK</span>
+    </header>
+
+    <section class="content">
+      <div class="hero">
+        <p>SELAMAT DATANG DI PARENTLINK</p>
+        <h1>Kolaborasi yang Lebih Dekat,<br>Pendidikan yang Lebih Kuat.</h1>
+        <p>Ruang komunikasi dan kerja sama antara sekolah,
+        komite, paguyuban, dan orang tua/wali murid.</p>
+        <a class="btn" href="aspirasi.html">Sampaikan Aspirasi →</a>
+      </div>
+
+      <h2>Menu Utama</h2>
+      <div class="grid">
+        <a class="card" href="paguyuban.html">
+          <div class="icon">👨‍👩‍👧</div>
+          <h3>Paguyuban</h3>
+          <p>Ruang komunikasi dan pengelolaan anggota orang tua.</p>
+          <b>Buka Halaman →</b>
+        </a>
+
+        <a class="card" href="komite.html">
+          <div class="icon">🏫</div>
+          <h3>Komite Sekolah</h3>
+          <p>Ruang koordinasi dan dukungan komite sekolah.</p>
+          <b>Buka Halaman →</b>
+        </a>
+
+        <a class="card" href="aspirasi.html">
+          <div class="icon">💬</div>
+          <h3>Ruang Aspirasi</h3>
+          <p>Sampaikan saran, masukan, dan kebutuhan sekolah.</p>
+          <b>Buka Halaman →</b>
+        </a>
+
+        <a class="card" href="agenda.html">
+          <div class="icon">📅</div>
+          <h3>Agenda Kegiatan</h3>
+          <p>Lihat dan tambahkan jadwal kegiatan bersama.</p>
+          <b>Buka Halaman →</b>
+        </a>
+      </div>
+    </section>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
