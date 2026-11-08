@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paguyuban | PARENTLINK</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <h2 class="brand">PARENT<span>LINK</span></h2>
+    <p class="tagline">Kolaborasi sekolah dan keluarga</p>
+    <nav>
+      <a href="index.html">⌂ Dashboard</a>
+      <a class="active" href="paguyuban.html">♧ Paguyuban</a>
+      <a href="komite.html">▣ Komite</a>
+      <a href="aspirasi.html">✉ Aspirasi</a>
+      <a href="agenda.html">▦ Agenda</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <span>Portal Kolaborasi Pendidikan</span>
+      <a href="index.html">Kembali ke Dashboard</a>
+    </header>
+
+    <section class="content">
+      <h1>Paguyuban Orang Tua</h1>
+      <p>Kelola data anggota paguyuban orang tua/wali murid.</p>
+
+      <div class="panel">
+        <h2>Tambah Anggota Paguyuban</h2>
+        <form id="memberForm">
+          <label>Nama Orang Tua/Wali</label>
+          <input name="nama" required placeholder="Masukkan nama">
+
+          <label>Kelas</label>
+          <input name="kelas" required placeholder="Contoh: VII A">
+
+          <label>Peran</label>
+          <select name="peran">
+            <option>Anggota Paguyuban</option>
+            <option>Koordinator Kelas</option>
+            <option>Pengurus Paguyuban</option>
+          </select>
+
+          <button class="btn" type="submit">+ Tambah Anggota</button>
+        </form>
+      </div>
+
+      <div class="panel">
+        <h2>Daftar Anggota</h2>
+        <div id="memberList"></div>
+      </div>
+    </section>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
