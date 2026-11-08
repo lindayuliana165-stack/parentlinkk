@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda | PARENTLINK</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <h2 class="brand">PARENT<span>LINK</span></h2>
+    <p class="tagline">Kolaborasi sekolah dan keluarga</p>
+    <nav>
+      <a href="index.html">⌂ Dashboard</a>
+      <a href="paguyuban.html">♧ Paguyuban</a>
+      <a href="komite.html">▣ Komite</a>
+      <a href="aspirasi.html">✉ Aspirasi</a>
+      <a class="active" href="agenda.html">▦ Agenda</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <span>Portal Kolaborasi Pendidikan</span>
+      <a href="index.html">Kembali ke Dashboard</a>
+    </header>
+
+    <section class="content">
+      <h1>Agenda Kegiatan</h1>
+      <p>Informasi jadwal kegiatan dan pertemuan sekolah.</p>
+
+      <div class="panel">
+        <h2>Tambah Agenda</h2>
+        <form id="agendaForm">
+          <label>Nama Kegiatan</label>
+          <input name="kegiatan" required placeholder="Contoh: Rapat Wali Murid">
+
+          <label>Tanggal Kegiatan</label>
+          <input type="date" name="tanggal" required>
+
+          <label>Tempat</label>
+          <input name="tempat" placeholder="Contoh: Aula Sekolah">
+
+          <button class="btn" type="submit">+ Tambah Agenda</button>
+        </form>
+      </div>
+
+      <div class="panel">
+        <h2>Daftar Agenda</h2>
+        <div id="agendaList"></div>
+      </div>
+    </section>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
